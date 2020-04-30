@@ -1,0 +1,14 @@
+@mixin bg($property) {
+    background: url($property) center (center / cover) no-repeat;
+}
+
+@mixin btn_hover {
+    &:hover {
+        background-image: none;
+        background-color: $blue;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
